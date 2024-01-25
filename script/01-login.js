@@ -15,8 +15,8 @@
 
         // username.setAttribute('value', "id")
         // password.setAttribute('value', "password")
-        username.value = 'colamkt'
-        password.value = 'rymd02021##!'
+        username.value = 'id'
+        password.value = 'password'
 
         const submit = document.querySelector('.btn.btn-primary')
         submit.click()
