@@ -42,7 +42,7 @@ chrome.tabs.onUpdated.addListener( async function (tabId, changeInfo, tab) {
         await chrome.tabs.update( tab.id, {url : 'https://supplier.coupang.com/scm/purchase/order/get/'+ targetBill.billNumber } )
         await sleep(4000)
 
-        let [{resultBillCont}] = await chrome.scripting.executeScript({
+        let [{result: resultBillCont}] = await chrome.scripting.executeScript({
             target: { tabId: tab.id },
             files: ['./script/03-readBills.js'], 
             })
